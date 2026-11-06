@@ -160,7 +160,7 @@
         </article>
 
         <article class="project" id="market-making" data-tags="trading">
-          <p class="figure"><b>2.2</b><span>out-of-sample Sharpe ratio, against −0.7 for symmetric quotes</span></p>
+          <p class="figure"><b>2.2</b><span>out-of-sample Sharpe ratio over 1,000 unseen days</span></p>
           <div class="project-body">
             <div class="project-top">
               <h3>Market-making simulator</h3>
@@ -171,7 +171,6 @@
             <ul class="points">
               <li>Tuned on 500 training days, then tested on 1,000 unseen days, where Avellaneda–Stoikov inventory skew beat symmetric quoting.</li>
               <li>Cut maximum drawdown to 4.4% of capital, against 37.8%, and inventory by 75%. It won in all 20 sensitivity settings.</li>
-              <li>I didn't trust an early Sharpe of 20.2. Modelling queue share and slower quote updates brought it down to a credible 2.2.</li>
             </ul>
             <p class="stack">Python, NumPy, pytest</p>
             <p class="links"><a href="https://github.com/rohansharmacode/market-making-simulator">Code on GitHub</a></p>
